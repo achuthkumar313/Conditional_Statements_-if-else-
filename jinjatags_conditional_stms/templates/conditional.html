@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h4>Conditional Statemants</h4>
+        <h4>Using if-else Condition</h4>
+
+        {% if a > b %}
+            {% if a > c %}
+                {% if a > d %}
+                    <h1> a is max </h1>
+                {% else %}
+                    <h1> d is max </h1>
+                {% endif %}
+            {% else %}
+                {% if c > d %}
+                    <h1> c is max </h1>
+                {% else %}
+                    <h1> d is max</h1>
+                {% endif %}
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                {% if b > d %}
+                    <h1> b is max </h1>
+                {% else %}
+                    <h1> d is max </h1>
+                {% endif %}
+            {% else %}
+                {% if c > d %}
+                    <h1> c is max </h1>
+                {% else %}
+                    <h1> d is max </h1>
+                {% endif %}
+            {% endif %}
+        {% endif %}
+
+    </center>
+</body>
+</html>
